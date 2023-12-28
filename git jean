@@ -1,0 +1,160 @@
+Last login: Thu Dec 28 17:05:22 on ttys000
+laskri@MacBook-Air-de-Laskri ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> You are using macOS 11.3.
+==> We (and Apple) do not provide support for this old version.
+This installation may not succeed.
+After installation, you will encounter build failures with some formulae.
+Please create pull requests instead of asking for help on Homebrew's GitHub,
+Twitter or any other official channels. You are responsible for resolving any
+issues you experience while you are running this old version.
+
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/sbin/chown -R laskri:admin /opt/homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 58, done.
+remote: Counting objects: 100% (58/58), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 58 (delta 23), reused 53 (delta 22), pack-reused 0
+Unpacking objects: 100% (58/58), 112.23 KiB | 2.00 MiB/s, done.
+From https://github.com/Homebrew/brew
+   67217f6e9..84c236062  master     -> origin/master
+HEAD is now at 84c236062 Merge pull request #16405 from dduugg/regexp-match
+Warning: /opt/homebrew/bin is not in your PATH.
+  Instructions on how to configure your shell for Homebrew
+  can be found in the 'Next steps' section below.
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/laskri/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+laskri@MacBook-Air-de-Laskri ~ % 
+laskri@MacBook-Air-de-Laskri ~ % 
+laskri@MacBook-Air-de-Laskri ~ % git init
+Reinitialized existing Git repository in /Users/laskri/.git/
+laskri@MacBook-Air-de-Laskri ~ % cd /Users/laskri/Desktop/learn_git
+cd: no such file or directory: /Users/laskri/Desktop/learn_git
+laskri@MacBook-Air-de-Laskri ~ % cd /Users/laskri/Desktop/learn_git
+laskri@MacBook-Air-de-Laskri learn_git % add third.txt
+zsh: command not found: add
+laskri@MacBook-Air-de-Laskri learn_git % add third.txt
+zsh: command not found: add
+laskri@MacBook-Air-de-Laskri learn_git % git add third.txt
+laskri@MacBook-Air-de-Laskri learn_git % git commit -m 'adding third.txt'
+[main 9e5f1ff] adding third.txt
+ Committer: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/learn_git/third.txt
+laskri@MacBook-Air-de-Laskri learn_git % git add fourth.txt
+fatal: pathspec 'fourth.txt' did not match any files
+laskri@MacBook-Air-de-Laskri learn_git % git add fourth.txt
+laskri@MacBook-Air-de-Laskri learn_git % git commit -m 'adding fourth.txt'
+[main a8b86fa] adding fourth.txt
+ Committer: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/learn_git/fourth.txt
+laskri@MacBook-Air-de-Laskri learn_git % git rm third.txt              
+rm 'Desktop/learn_git/third.txt'
+laskri@MacBook-Air-de-Laskri learn_git % git commit -m 'removing third.txt'
+[main 1b2201a] removing third.txt
+ Committer: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Desktop/learn_git/third.txt
+laskri@MacBook-Air-de-Laskri learn_git % git log
+commit 1b2201a00a769c4c014ad4b7fda5d839888d564a (HEAD -> main)
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:17:45 2023 +0100
+
+    removing third.txt
+
+commit a8b86fa44e9d09da30f418a2ad3f3a00317fc5cf
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:16:32 2023 +0100
+
+    adding fourth.txt
+
+commit 9e5f1ffd2e7ec66ff40e1656cd49469f3308fb7d
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:15:02 2023 +0100
+
+    adding third.txt
+
+commit ad4e0fee7b969773ada5bbf15b916e4debea5c2e
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:09:04 2023 +0100
+
+    first commit
+
+commit b7ab142e5b1525b8f6ce99449d2c896db8075bcc
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:08:42 2023 +0100
+
+    first commit
+
+commit 30ac3bf8f0369d19a7c4298d3106f333fd77284f
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:08:28 2023 +0100
+
+    first commit
+
+commit 8440553eb4eb7c603d88cb17880c108590d382e8
+Author: Laskri <laskri@MacBook-Air-de-Laskri.local>
+Date:   Thu Dec 28 17:08:06 2023 +0100
+
+    first commit
+laskri@MacBook-Air-de-Laskri learn_git % 
