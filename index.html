@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Jean Husson de Sampigny</title>
+     <!-- Balise style pour styliser le site au minimum sans trop de CSS car c'est consacré au HTML -->
+
+<style>
+  body {
+    font-family: sans-serif;
+  }   
+ 
+ nav{
+        text-align: center;
+background-color: blue;
+font-size: 20px;
+margin-top: center;
+position:sticky;
+top: 0;
+     }
+
+    a {
+        color:white;
+    } 
+
+    header{
+        font-size: 25px;
+text-align: center;
+color: white;
+background-color: darkblue;
+margin: auto;
+    }
+
+    footer{
+text-align: center;
+color: white;
+background-color: darkblue;
+margin: auto;
+    }
+
+    section{
+float: left;
+width: 50%;
+height: 400px;
+background-color: white;
+}
+
+
+</style>  
+
+</head>
+<body>
+         <!--  Bonne lecture Karim ! -->
+
+
+    <header>
+        <h1>Mon Portfolio</h1>
+        <img src="https://www.novojob.com/attachments/company_logo/logo_2321494.jpg" width="10%">
+    </header>
+
+    <nav>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">work</a>
+        <a href="#resume">resume</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>a propos</h2>
+
+        <p>Voici une liste pour me presenter</p>
+        <ul>
+            <li>Prenom : Jean </li>
+            <li>Age : 33 ans </li>
+            <li>Ville : Casablanca </li>
+        </ul>
+
+        
+    </section>
+    
+    <section id="work">
+        <h2>mon travail</h2>
+        <p>Voici une video pour parler de mon travail</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EJisOTlz9WQ?si=wXrnbxoGQW96gVo5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </section>
+    <section id="resume">
+        <h2>CV</h2>
+        <p>Voici un tableau pour mon CV</p>
+        <table align="center">
+            <tr style="background-color: darkblue; color: white;"> 
+             <th>Experience</th>
+            <th>Annee</th>
+            </tr>
+            <tr>
+<td>
+    Referent numerique a EDC
+</td>
+<td>
+    2022-2023
+</td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Responsable pedagogique Happy Coders Academy
+                </td>
+                <td>
+                    2016-2022
+                </td>
+                
+                            </tr>
+        </table>
+    
+    </section>
+    
+    <section id="contact">
+        <h2>contact</h2>
+
+        <form style="text-align: center;">
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <br>
+    
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+    
+            <button type="submit" style="background-color: darkblue; color: white; border-radius: 5px;">Valider</button>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <p>Site de Jean Husson de Sampigny</p>
+    </footer>
+
+</body>
+</html>
+
+    
+</body>
+</html>
