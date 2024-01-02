@@ -5,66 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Jean Husson de Sampigny</title>
      <!-- Balise style pour styliser le site au minimum sans trop de CSS car c'est consacré au HTML -->
-
-<style>
-  body {
-    font-family: sans-serif;
-  }   
- 
- nav{
-        text-align: center;
-background-color: blue;
-font-size: 20px;
-margin-top: center;
-position:sticky;
-top: 0;
-     }
-
-    a {
-        color:white;
-    } 
-
-    header{
-        font-size: 25px;
-text-align: center;
-color: white;
-background-color: darkblue;
-margin: auto;
-    }
-
-    footer{
-text-align: center;
-color: white;
-background-color: darkblue;
-margin: auto;
-    }
-
-    section{
-float: left;
-width: 50%;
-height: 400px;
-background-color: white;
-}
-
-
-</style>  
-
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
          <!--  Bonne lecture Karim ! -->
 
 
     <header>
-        <h1>Mon Portfolio</h1>
+        <h1 class="blanc">Mon Portfolio</h1>
         <img src="https://www.novojob.com/attachments/company_logo/logo_2321494.jpg" width="10%">
     </header>
 
     <nav>
-        <a href="">home</a>
-        <a href="">about</a>
-        <a href="">work</a>
-        <a href="#resume">resume</a>
-        <a href="#contact">contact</a>
+        <ul>
+       <li><a href="#home" class="blanc">home</a></li> 
+        <li><a href="#about" class="blanc">about</a></li>
+        <li><a href="#work" class="blanc">work</a></li>
+        <li><a href="#resume" class="blanc">resume</a></li>
+       <li><a href="#contact" class="blanc">contact</a></li> 
+        </ul>
     </nav>
 
     <section id="about">
@@ -133,14 +95,14 @@ background-color: white;
             <input type="email" id="email" name="email" required>
             <br>
     
-            <button type="submit" style="background-color: darkblue; color: white; border-radius: 5px;">Valider</button>
+            <button type="submit">Valider</button>
         </form>
     </section>
 
 
 
     <footer>
-        <p>Site de Jean Husson de Sampigny</p>
+        <p class="blanc">Site de Jean Husson de Sampigny</p>
     </footer>
 
 </body>
